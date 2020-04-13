@@ -27,11 +27,13 @@ h1 span {
   font-weight: 600;
 }
 
-h3 {
+h2 {
   color: hsl(234, 12%, 34%);
+  margin: 0;
 }
 
 p {
+  font-size: 15px;
   color: hsl(229, 6%, 66%);
 }
 
@@ -44,11 +46,66 @@ p {
   max-width: 1440px;
 }
 
-/* Style cards. */
+/* Style cards. Using position: relative to be able to style the top border using the ::after selector, and overflow: hidden so that the border radius is visible. */
 .card {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
   width: 350px;
   padding: 30px;
   margin: 20px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 6px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+}
+
+/* Create a line 5 pixels high the length of the card container, and position it at the top left. Using this CSS trick so that the top border does not have visible inner curves. */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.card-cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.card-red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.card-blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card-orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.card p {
+  font-size: 13px;
+  margin: 15px 0 40px;
+}
+
+/* vertical-align: ; */
+
+.card img {
+  float: right;
+}
+
+.card-transform {
+  transform: translateY(50%);
+}
+
+@media (max-width: 1120px) {
+  .card-transform {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.7em;
+  }
 }
