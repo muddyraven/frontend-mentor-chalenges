@@ -11,27 +11,48 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
     <main class="container">
-      <section>
-        <h1>We're <span>coming soon</span></h1>
+      <section class="left">
+        <img
+          src="/base-apparel-coming-soon/images/logo.svg"
+          alt="Base Apparel logo"
+        />
+        <h1><span>We're </span>coming soon</h1>
         <p>
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <img
-          src="images/hero-desktop.jpg"
-          alt="A photograph of a woman with brunette hair wearing an orange shirt"
-        />
         <form action="">
           <input type="email" placeholder="Email Address" />
-          <button type="submit"></button>
+          <img
+            class="error"
+            src="/base-apparel-coming-soon/images/icon-error.svg"
+            alt="error icon"
+          />
+          <button type="submit">
+            <img
+              src="/base-apparel-coming-soon/images/icon-arrow.svg"
+              alt="arrow icon"
+            />
+          </button>
+          <small>Please provide a valid email</small>
         </form>
       </section>
+      <img
+        class="right image"
+        src="/base-apparel-coming-soon/images/hero-desktop.jpg"
+        alt="A photograph of a woman with brunette hair wearing an orange shirt"
+      />
     </main>
   </body>
 </html>
