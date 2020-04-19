@@ -11,18 +11,19 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  background-image: url(/base-apparel-coming-soon/images/bg-pattern-desktop.svg);
-  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+ 
 }
 
 .container {
   display: flex;
-  max-width: 1440px;
+  min-height: 100vh;
 }
 
 .left {
   width: 60%;
+  background-image: url(/base-apparel-coming-soon/images/bg-pattern-desktop.svg);
+  background-size: cover;
   padding: 0 170px;
 }
 
@@ -31,7 +32,13 @@ body {
 }
 
 .right {
-  width: 40%
+  width: 40%;
+}
+
+.background-image {
+	background-image: url('/base-apparel-coming-soon/images/hero-desktop.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 
 .logo {
@@ -62,9 +69,7 @@ p {
   color: hsl(0, 36%, 70%);
   line-height: 26px;
   margin-bottom: 50px;
-  
 }
-
 
 form {
   position: relative;
@@ -117,7 +122,6 @@ form.error .error-icon {
   display: block;
 }
 
-
 small {
   display: none;
   color: hsl(0, 93%, 68%);
@@ -130,30 +134,30 @@ form.error small {
 }
 
 ::placeholder {
-  color: hsl(0, 36%, 70%)
+  color: hsl(0, 36%, 70%);
 }
 
 @media screen and (max-width: 500px) {
   .left {
     width: 100%;
     padding: 0;
-    /*text-align: center;*/
   }
   .right {
     display: none;
   }
 
-.logo {
-  margin: 30px 40px;
-  width: 100px;
-}
+  .logo {
+    margin: 30px 40px;
+    width: 100px;
+  }
 
   .mobile {
     display: block;
     margin: 0 auto;
   }
 
-  h1, p {
+  h1,
+  p {
     text-align: center;
   }
 
@@ -169,7 +173,7 @@ form.error small {
   }
 
   form {
-    margin: 20px 30px  80px 30px;
+    margin: 20px 30px 80px 30px;
   }
 
   ::placeholder {
@@ -188,35 +192,8 @@ form.error small {
   h1 {
     font-size: 250%;
   }
+  form {
+    margin-bottom: 40px;
+  }
 }
 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Desaturated Red: hsl(0, 36%, 70%)
-- Soft Red: hsl(0, 93%, 68%)
-
-### Neutral
-
-- Dark Grayish Red: hsl(0, 6%, 24%)
-
-### Gradients
-
-- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px

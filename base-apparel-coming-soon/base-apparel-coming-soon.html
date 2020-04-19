@@ -1,4 +1,10 @@
-<!-- HTML was much easier to write this time, but the CSS was very challenging. I need to reinforce and expand my knowledge of CSS properties. -->
+<!--
+  HTML was much easier to write this time, but the CSS was very challenging. I need to reinforce and expand my knowledge of CSS properties.
+  
+  Really not sure that I applied the image on the right side of the page correctly - feels hacky to me. Will attempt this challenge again, put wanted to post my work for now.
+
+  Looks good at 1440px though, and mobile page looks great at 375px. Not sure how I should style in between though, maybe that is part of the challenge?!
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,30 +42,26 @@
             Add your email below to stay up-to-date with announcements and our
             launch deals.
           </p>
-          <form action="">
-          <input type="email" placeholder="Email Address" />
-          <img
+          <form id="form" action="">
+            <input id="email" type="email" placeholder="Email Address" />
+            <img
             class="error-icon"
             src="/base-apparel-coming-soon/images/icon-error.svg"
             alt="error icon"
-          />
-          <button type="submit">
-            <img
-              src="/base-apparel-coming-soon/images/icon-arrow.svg"
-              alt="arrow icon"
             />
-          </button>
-          <small>Please provide a valid email</small>
-        </form>
-      </section>
+            <button type="submit">
+              <img
+                src="/base-apparel-coming-soon/images/icon-arrow.svg"
+                alt="arrow icon"
+              />
+            </button>
+            <small>Please provide a valid email</small>
+          </form>
+        </section>
       </div>
-      <div class="right">
-      <img
-        class="image"
-        src="/base-apparel-coming-soon/images/hero-desktop.jpg"
-        alt="A photograph of a woman with brunette hair wearing an orange shirt"
-      />
-    </div>
+      <div class="right background-image">
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
