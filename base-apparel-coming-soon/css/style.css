@@ -165,13 +165,13 @@ form.error small {
 
   p {
     font-size: 90%;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     padding: 0 30px;
     line-height: 20px;
   }
 
   form {
-    margin: 0 30px;
+    margin: 20px 30px  80px 30px;
   }
 
   ::placeholder {
