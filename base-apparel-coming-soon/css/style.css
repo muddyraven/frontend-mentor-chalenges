@@ -150,7 +150,6 @@ form.error small {
 
   .mobile {
     display: block;
-    /*margin-bottom: 60px;*/
     margin: 0 auto;
   }
 
@@ -165,7 +164,6 @@ form.error small {
 
   p {
     font-size: 90%;
-    /*margin-bottom: 20px;*/
     padding: 0 30px;
     line-height: 20px;
   }
@@ -187,7 +185,9 @@ form.error small {
   .left {
     padding: 0 60px;
   }
-
+  h1 {
+    font-size: 250%;
+  }
 }
 
 # Front-end Style Guide
